@@ -2,8 +2,10 @@
 <html lang="en">
    
     
-   <!--LO QUE NO SE VE-->
    <head>
+       
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+       
        <link href="../multimedia/favicon.png" rel="icon">
        
        <!--SEO-->
@@ -12,42 +14,36 @@
        <title>¿Qué combo elegís?</title>
        
        <!--ESTILOS-->  
-       
        <link href="../css/estilo.css" rel="stylesheet"/>
        
        <!--TIPOGRAFIAS-->
        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet"> 
        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
        
-       <!--ANIMACION-->
-       <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
    </head>
     
     
-     <!--LO QUE SI SE VE-->
    <body>
        
        <!--MENU-->
        <header>
-           <nav>
-               <div class="menu">
+            <div class="contenedorMenu">
+                <label><a href="index.html"><img class="marcaOriginal" src="../multimedia/logo.png" alt="marca"><img class="marca" src="../multimedia/favicon.png" alt="marcaResponsive"></a></label>
                    
-                  <div class="logo"><a href="index.html"><img src="../multimedia/logo.png" alt="logo"></a></div>
-                   
-                  <div class="s1"><a href="../index.html">Inicio</a></div>
-                   
-                  <div class="s2"><a href="equipo.html">Equipo</a></div>
-                   
-                  <div class="s3"><a class="seccion" href="servicios.html">Servicios</a></div>
-                   
-                  <div class="s4"><a href="beneficios.html">Beneficios</a></div>
-                   
-                  <div class="s5"><a href="testimonios.html">Testimonios</a></div>
-                   
-                  <div class="s6"><a href="contacto.html">Contacto</a></div>
-                 
-               </div>
-           </nav>
+                <input type="checkbox" id="check">
+                <label class="contenedorIconoMenu" for="check"><img class="iconoMenu" src="../multimedia/menuDesplegable.png" alt="menuDesplegable"></label>
+                
+                <nav class="menu">
+                    <ul class="desplegable">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="equipo.html">Equipo</a></li>
+                        <li><a class="seccion" href="servicios.html">Servicios</a></li>
+                        <li><a href="beneficios.html">Beneficios</a></li>
+                        <li><a href="testimonios.html">Testimonios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+           </div>
        </header>
        
        
@@ -57,7 +53,7 @@
              <div class="contenidoServicios">
                 <h2>DESCUBRÍ TU PREFERIDO</h2>
                 <p><strong>¡Mini Lectores te sorprenderá cada mes!</strong>
-                <br>Los combos son hechos con mucho amor y personalizados según la edad del mini lector</p>
+                <br>Los combos son hechos con mucho amor y personalizados según la edad del mini lector.</p>
              </div>
            
              <div class="combos">
@@ -83,20 +79,22 @@
                     <a class="botonVer" href="">VER MÁS</a>
                  </div>
                 
-                 <div class="pack">
+                 <div class="pack astronauta">
                      <div class="contenedorImgPack">
                          <img class="imgPacks" src="../multimedia/pack3.png" alt="pack3">
                      </div>
                     <h4>Combo Astronauta</h4>
                     <p class="contenidoCaja">3 libros de lectura<br>libro de actividades</p>
                     <p class="sorpresa">+ SORPRESA</p>
-                    <a class="botonVer" href="">VER MÁS</a>
+                    <a class="botonVer pack3" href="">VER MÁS</a>
                  </div>
 
              </div>
        </section>
        
        
+       
+       <!--EL FAVORITO-->
        <section id="favorito">
            <div class="imgFavorito">
               <img class="elFavorito" src="../multimedia/favorito.png" alt="libro">
@@ -105,7 +103,6 @@
               <h2>EL FAVORITO DE TODOS</h2>
               <p>"El gran libro de las emociones" formó parte de muchos combos austronauta este mes y resultó ser uno de los favoritos para nuestros Mini Lectores así que no te lo pierdas ¡Te lo recomendamos!</p>
            </div>
-       
        </section>
        
        
@@ -134,14 +131,6 @@
            </div>
        </div>
        </footer>
-       
-   
-       
-     <script src="js/wow.min.js"></script>
-     <script>
-        new WOW().init();
-     </script>
-   
             
         
    </body>  

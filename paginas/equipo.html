@@ -2,8 +2,10 @@
 <html lang="en">
    
     
-   <!--LO QUE NO SE VE-->
    <head>
+       
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+       
        <link href="../multimedia/favicon.png" rel="icon">
        
        <!--SEO-->
@@ -12,56 +14,51 @@
        <title>Los grandes saben</title>
        
        <!--ESTILOS-->  
-       
        <link href="../css/estilo.css" rel="stylesheet"/>
        
        <!--TIPOGRAFIAS-->
        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet"> 
        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
        
-       <!--ANIMACION-->
-       <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
    </head>
     
-    
-   <!--LO QUE SI SE VE-->
    <body>
        
        <!--MENU-->
        <header>
-           <nav>
-               <div class="menu">
+            <div class="contenedorMenu">
+                <label><a href="index.html"><img class="marcaOriginal" src="../multimedia/logo.png" alt="marca"><img class="marca" src="../multimedia/favicon.png" alt="marcaResponsive"></a></label> 
                    
-                  <div class="logo"><a href="index.html"><img src="../multimedia/logo.png" alt="logo"></a></div>
-                   
-                  <div class="s1"><a href="../index.html">Inicio</a></div>
-                   
-                  <div class="s2"><a class="seccion" href="equipo.html">Equipo</a></div>
-                   
-                  <div class="s3"><a href="servicios.html">Servicios</a></div>
-                   
-                  <div class="s4"><a href="beneficios.html">Beneficios</a></div>
-                   
-                  <div class="s5"><a href="testimonios.html">Testimonios</a></div>
-                   
-                  <div class="s6"><a href="contacto.html">Contacto</a></div>
-                 
-               </div>
-           </nav>
+                <input type="checkbox" id="check">
+                <label class="contenedorIconoMenu" for="check"><img class="iconoMenu" src="../multimedia/menuDesplegable.png" alt="menuDesplegable"></label>
+                
+                <nav class="menu">
+                    <ul class="desplegable">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a class="seccion" href="equipo.html">Equipo</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="beneficios.html">Beneficios</a></li>
+                        <li><a href="testimonios.html">Testimonios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+           </div>
        </header>
+       
+       
            
        <!--EQUIPO-->
        <section id="equipo">
-           <div>
-           <h2>ESTÁN EN BUENAS MANOS</h2>
-              <div class="persona">
-                  <div class="contenedorImgEquipo">
-                    <img class="equipo" src="../multimedia/equipo1.png" alt="persona">
-                  </div>
-                 <h3>Soledad Garcia</h3>
-                    <h4>Psicóloga</h4>
-                    <p>Es la jefa del equipo totalmente capacitada en el trabajo con niños de diferentes edades.</p>
-              </div>
+           <div class="contenedorEquipo">
+               <h2>ESTÁN EN BUENAS MANOS</h2>
+                   <div class="persona">
+                      <div class="contenedorImgEquipo">
+                          <img class="equipo" src="../multimedia/equipo1.png" alt="persona">
+                      </div>
+                      <h3>Soledad Garcia</h3>
+                      <h4>Psicóloga</h4>
+                      <p>Es la jefa del equipo totalmente capacitada en el trabajo con niños de diferentes edades.</p>
+                   </div>
     
               <div class="persona">
                   <div class="contenedorImgEquipo">
@@ -91,10 +88,38 @@
                </div>
            </div>
        </section>
-
+       
+       
+       
+       
+       <!--ME SUMO-->
+       <section id="meSumo">
+          <div class="contenidoMeSumo">
+              <h2>CONVERTITE EN MINI LECTOR</h2>
+              <p>Sumate a esta gran comunidad en pocos pasos y llevaremos las mejores aventuras y conocimientos para disfrutar en familia a la puerta de tu casa.</p>
+              <a class="botonMeSumo" href="paginas/servicios.html">¡QUIERO SUMARME!</a>
+          </div>
+          <div class="imgNene">
+              <img class="imagen" src="../multimedia/nene.png" alt="neneConLibro">
+          </div>
+       </section>
+       
+       
+       
+       
+       <!-- FRASE -->
+       <section id="frase">
+           <div>
+               <h4>“Ante ciertos libros, uno se pregunta: ¿quién los leerá? Y ante ciertas personas uno se pregunta: ¿qué leerán? Y al fin, libros y personas se encuentran"</h4>
+               <h6>André Paul Guillaume Gide, estritor</h6>
+           </div>
+       </section>
+       
+       
+       
        
        <!--FOOTER-->
-       <footer>
+       <section class="footer2">
            <div class="descripcion">
                <img src="../multimedia/logo.png" alt="logo">
                <p>Club de lectura para niños y niñas de 0 a 10 años de toda la República Argentina.</p>
@@ -116,16 +141,8 @@
                <a href=""> <img class="redes" src="../multimedia/redes3.png" alt="twitter"> </a>   
            </div>
        </div>
-       </footer>
-       
-     
-       
-     <script src="js/wow.min.js"></script>
-     <script>
-        new WOW().init();
-     </script>
-   
-            
+       </section> 
+         
         
    </body>     
 </html>
