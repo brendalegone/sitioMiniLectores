@@ -2,8 +2,10 @@
 <html lang="en">
    
     
-   <!--LO QUE NO SE VE-->
    <head>
+       
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+       
        <link href="../multimedia/favicon.png" rel="icon">
        
        <!--SEO-->
@@ -12,11 +14,9 @@
        <title>Lectores adultos</title>
        
        
-   <!--ESTILOS-->  
-      
+       <!--ESTILOS-->  
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
        
-       <link rel="stylesheet" href="../css/bootstrap.css"/>
        
        <script src="../js/bootstrap.js"></script>
        
@@ -27,34 +27,32 @@
        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet"> 
        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
        
-       <!--ANIMACION-->
-       <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+       
    </head>
    
-   <!--LO QUE SI SE VE-->
+   
+    
    <body>
        
        <!--MENU-->
        <header>
-           <nav>
-               <div class="menu">
+            <div class="contenedorMenu">
+                <label><a href="index.html"><img class="marcaOriginal" src="../multimedia/logo.png" alt="marca"><img class="marca" src="../multimedia/favicon.png" alt="marcaResponsive"></a></label> 
                    
-                  <div class="logo"><a href="index.html"><img src="../multimedia/logo.png" alt="logo"></a></div>
-                   
-                  <div class="s1"><a href="../index.html">Inicio</a></div>
-                   
-                  <div class="s2"><a href="equipo.html">Equipo</a></div>
-                   
-                  <div class="s3"><a href="servicios.html">Servicios</a></div>
-                   
-                  <div class="s4"><a href="beneficios.html">Beneficios</a></div>
-                   
-                  <div class="s5"><a class="seccion" href="testimonios.html">Testimonios</a></div>
-                   
-                  <div class="s6"><a href="contacto.html">Contacto</a></div>
-                 
-               </div>
-           </nav>
+                <input type="checkbox" id="check">
+                <label class="contenedorIconoMenu" for="check"><img class="iconoMenu" src="../multimedia/menuDesplegable.png" alt="menuDesplegable"></label>
+                
+                <nav class="menu">
+                    <ul class="desplegable">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="equipo.html">Equipo</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="beneficios.html">Beneficios</a></li>
+                        <li><a class="seccion" href="testimonios.html">Testimonios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+           </div>
        </header>
        
 
@@ -73,14 +71,8 @@
                
              <div id="demo" class="carousel slide" data-ride="carousel">
 
-  <!-- Indicators 
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>-->
   
-  <!-- The slideshow -->
+  <!-- carrusel -->
   <div class="carousel-inner">
     <div class="carousel-item active">
         
@@ -119,7 +111,7 @@
         </div>
   </div>
   
-  <!-- Left and right controls-->
+  <!-- controles flechas -->
   <a class="carousel-control-prev" href="#demo" data-slide="prev">
     <span class="carousel-control-prev-icon"></span>
   </a>
@@ -138,28 +130,28 @@
           <div>
               <div class="contenidoTop">
                  <h2>LOS REYES DEL PODIO</h2>
-                 <p>Conoce nuestro <strong>#TOP3</strong> del podio mensual de libros totalmente ilustrados realizados por las mismas familias de Mini Lectores al votar los libros que llegan a su hogar en su esperadísimo combo</p> 
+                 <p>Conoce nuestro <strong>#TOP3</strong> del podio mensual de libros totalmente ilustrados realizados por las mismas familias de Mini Lectores al votar los libros que llegan a su hogar en su esperadísimo combo.</p> 
              </div>
              <ol>
                 <li>
                 <div class="libros">
-                    <img class="imgPasos" src="../multimedia/top2.png" alt="top2">
+                    <img class="imgLibro" src="../multimedia/top2.png" alt="top2">
                     <h4>De <i>Martín Badía</i></h4>
-                    <p>Un libro lleno de magia, donde cada página es una obra de arte que nos invita a soñar. Torres altísimas, reyes, princesas y dragones nos esperan en sus páginas para abrirnos las puertas al coraje y la valentía, los miedos y la aventura de su universo de castillos.</p>
+                    <p>Un libro lleno de magia, donde cada página nos invita a soñar. Torres altísimas, reyes, princesas y dragones nos esperan para abrirnos las puertas al coraje y la valentía, los miedos y la aventura de su universo de castillos.</p>
                  </div>
                  </li>
                  <li>
-                 <div class="libros">
-                    <img class="imgPasos" src="../multimedia/top1.png" alt="top1">
+                 <div class="libros contenedor">
+                    <img class="imgLibro" src="../multimedia/top1.png" alt="top1">
                     <h4>De <i>Mar Benegas</i></h4>
-                    <p>Este poemario es irresistible para los más pequeños. Cada poema es un juego y se recomienda leerlo sin prejuicios. Conjuros para convertir a los profesores en moscas o caracoles y muchas criaturas increíbles. <br>Pura diversión.</p>
+                    <p>Un poemario irresistible para los más pequeños. Cada poema es un juego y se recomienda leerlo sin prejuicios. Conjuros para convertir a los profesores en moscas y muchas criaturas increíbles. Pura diversión.</p>
                  </div>
                  </li>
                  <li>
                  <div class="libros">
-                    <img class="imgPasos" src="../multimedia/top-3.png" alt="top3">
+                    <img class="imgLibro" src="../multimedia/top-3.png" alt="top3">
                     <h4>De <i>Juani Velilla</i></h4>
-                    <p>Una entrañable y divertida historia de amistad sobre la importancia de los abrazos, que promueve valores esenciales para el desarrollo emocional intanfil como: fomentar una autoestima positiva y la aceptación de los demás tal y como son.</p>
+                    <p>Una divertida historia de amistad sobre la importancia de los abrazos, que promueve valores esenciales para el desarrollo emocional intanfil como: fomentar una autoestima positiva y la aceptación de los demás tal y como son.</p>
                  </div>
                  </li>
              </ol>
@@ -199,10 +191,7 @@
     
        
        
-      <script src="js/wow.min.js"></script>
-     <script>
-        new WOW().init();
-     </script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
