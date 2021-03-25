@@ -2,7 +2,7 @@
 <html lang="en"> <!--idioma-->
    
     
-   <!--LO QUE NO SE VE-->
+   
    <head>
        
        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -28,32 +28,33 @@
    </head>
     
     
-   <!--LO QUE SI SE VE-->
+   
    <body>
        
        
        <!--MENU-->
        <header>
-           <nav>
-               <div class="menu">
+            <div class="contenedorMenu">
+                <label><a href="index.html"><img class="marcaOriginal" src="multimedia/logo.png" alt="marca"><img class="marca" src="multimedia/favicon.png" alt="marcaResponsive"></a></label> 
                    
-                  <div class="logo"><a href="index.html"><img src="multimedia/logo.png" alt="logo"></a></div>
-                   
-                  <div class="s1"><a class="seccion" href="index.html">Inicio</a></div>
-                   
-                  <div class="s2"><a href="paginas/equipo.html">Equipo</a></div>
-                   
-                  <div class="s3"><a href="paginas/servicios.html">Servicios</a></div>
-                   
-                  <div class="s4"><a href="paginas/beneficios.html">Beneficios</a></div>
-                   
-                  <div class="s5"><a href="paginas/testimonios.html">Testimonios</a></div>
-                   
-                  <div class="s6"><a href="paginas/contacto.html">Contacto</a></div>
-                 
-               </div>
-           </nav>
+                <input type="checkbox" id="check">
+                <label class="contenedorIconoMenu" for="check"><img class="iconoMenu" src="multimedia/menuDesplegable.png" alt="menuDesplegable"></label>
+                
+                <nav class="menu wow">
+                    <ul class="desplegable">
+                        <li><a class="seccion"  href="index.html">Inicio</a></li>
+                        <li><a href="paginas/equipo.html">Equipo</a></li>
+                        <li><a href="paginas/servicios.html">Servicios</a></li>
+                        <li><a href="paginas/beneficios.html">Beneficios</a></li>
+                        <li><a href="paginas/testimonios.html">Testimonios</a></li>
+                        <li><a href="paginas/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+           </div>
        </header>
+       
+       
+       
         
        <!--PORTADA-->
        <section id="portada">
@@ -82,7 +83,7 @@
                  </div>
                  </li>
                  <li>
-                 <div class="center">
+                 <div class="center paso2">
                     <img class="imgPasos" src="multimedia/pasos2.png" alt="paso2">
                     <h4>RECIBÍ</h4>
                     <p>Recoge tu combo de Mini Lectores todos los meses sin moverte de tu casa.</p>
@@ -99,7 +100,7 @@
           </div>
        </section>
            
-       <br>
+       
        
        <!--FOOTER-->
        <footer>
