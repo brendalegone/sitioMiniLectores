@@ -34,6 +34,8 @@ header {
     align-items: center;
     justify-content: space-between;
     font-weight: 500; }
+    header .contenedorMenu .marca {
+      display: none; }
     header .contenedorMenu .contenedorIconoMenu {
       display: none;
       width: 40px; }
