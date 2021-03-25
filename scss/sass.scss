@@ -62,6 +62,10 @@ header {
         justify-content: space-between;
         font-weight: 500;
         
+        .marca {
+            display: none;
+        }
+        
         .contenedorIconoMenu {
             display: none;
             width: 40px;
